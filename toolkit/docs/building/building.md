@@ -657,6 +657,7 @@ To reproduce an ISO build, run the same make invocation as before, but set:
 | UNATTENDED_INSTALLER          |                                                                                                        | Create unattended ISO installer if set. Overrides all other installer options.
 | PACKAGE_BUILD_LIST            |                                                                                                        | Additional packages to build. The package will be skipped if the build system thinks it is already up-to-date.
 | PACKAGE_REBUILD_LIST          |                                                                                                        | Always rebuild this package, even if it is up-to-date. Base package name, will match all virtual packages produced as well.
+| ALLOW_PREBUILT_REBUILDS          |                                                                                                        | Don't rebuild this package.
 | SRPM_PACK_LIST                |                                                                                                        | List of spec basenames to build into SRPMs. If empty, all specs under `$(SPECS_DIR)` will be packed.
 | SSH_KEY_FILE                  |                                                                                                        | Use with `make meta-user-data` to add the ssh key from this file into `user-data`.
 
